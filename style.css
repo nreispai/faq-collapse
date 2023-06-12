@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-tittle {
+  width: 40%;
+  margin-bottom: 50px;
+  font-family: "Noto Sans";
+}
+
+.question-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 40px 40px;
+  font-family: "Noto Sans";
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 25px;
+  background-color: white;
+  height: 100%;
+  position: relative;
+}
+
+.question-card p {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.question-card.active {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  box-shadow: 5px 5px 10px rgba(193, 187, 187, 0.4);
+}
+
+.question-card.active p {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+}
+
+.question-card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.question-text {
+  font-size: 18px;
+}
+
+.question-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+}
+
+.answer {
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 200;
+  color: #374151;
+}
